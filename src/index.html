@@ -1,16 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
-  <title>Proyecto final M1</title>
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline text-blue-700">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Proyecto final M1</title>
+  </head>
+  <body class="flex bg-[#9ECBEB]">
+    <div class="container flex items-center justify-center h-screen">
+      <div class="grid grid-cols-4 " id="grid"></div>
+
+      <div class="bar bg-white w-full fixed bottom-0 left-0 right-0">
+        <form class="flex flex-col items-center mt-6 mb-6 text-sm" id="form">
+          <div class="flex w-3/4 justify-between">
+            <fieldset class="">
+              <label class="font-light">Activitat</label>
+              <input
+                type="text"
+                name="activity"
+                id="activityInput"
+                placeholder="Títol Activitat"
+                class="bg-stone-200 rounded-md px-2 placeholder-black/20 placeholder:font-light"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="">
+              <label class="font-light">Descripció</label>
+              <input
+                type="text"
+                name="description"
+                id="descriptionInput"
+                placeholder="Descripció"
+                class="bg-stone-200 rounded-md px-2 placeholder-black/20 placeholder:font-light"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="">
+              <label class="font-light">URL</label>
+              <input
+                type="url"
+                name="URL"
+                id="urlInput"
+                placeholder="URL"
+                class="bg-stone-200 rounded-md px-2 placeholder-black/20 placeholder:font-light"
+                required
+              />
+            </fieldset>
+
+            <button
+              type="submit"
+              class="fa-solid fa-circle-plus fa-xl"
+              id="submitButton"
+              style="color: #64859c"
+            ></button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- <h1 class="text-3xl font-bold underline text-blue-700">
     Hello world!
-  </h1>
-  <script src="index.js"></script>
-</body>
+  </h1> -->
+
+    <script src="./index.js"></script>
+  </body>
 </html>
