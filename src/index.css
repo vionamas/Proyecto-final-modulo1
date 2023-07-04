@@ -1,0 +1,71 @@
+/* font-family: 'Anton', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Playfair Display', serif; */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    
+    background-color: antiquewhite;
+    text-align:center;
+}
+
+header {
+   
+   display: flex;
+   justify-content:  center;
+   padding-top: 80px;
+}
+
+.container{
+
+}
+
+
+
+.card { 
+text-align: center;
+width: 400px;
+height: 400px;
+padding-left: 15%;
+padding-right: 15%;
+
+
+
+
+}
+
+.grid {
+    grid-template-columns: 400px 400px 400px;
+    width: fit-content;
+    
+    
+    
+}
+
+.number{
+    font-size: 120px;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: -20px;
+}
+
+.title {
+    font-family: 'Lobster', cursive;
+padding-top: -20px;
+}
+
+.description {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: light;
+    font-size: 10pt;
+    margin-bottom: 20px;
+}
+
+
+
+
